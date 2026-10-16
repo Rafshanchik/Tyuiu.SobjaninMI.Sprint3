@@ -1,0 +1,27 @@
+﻿using Tyuiu.SobjaninMI.Sprint3.Task2.V9.Lib;
+
+Console.Title = "Спринт #3 | Выполнил: Собянин М. И. | СМАРТб-26-1";
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* Спринт #3                                                               *");
+Console.WriteLine("* Тема: Операторы цикла do...while                                        *");
+Console.WriteLine("* Задание #2                                                              *");
+Console.WriteLine("* Вариант #9                                                              *");
+Console.WriteLine("* Выполнил: Собянин Михаил Игоревич | СМАРТб-26-1                         *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* УСЛОВИЕ:                                                                *");
+Console.WriteLine("* Написать программу используя цикл do...while, которая вычисляет сумму   *");
+Console.WriteLine("* ряда по формуле, при n=5                                                *");
+Console.WriteLine("* S = сумма от k=1 до 10 ( (1 / n^k) )^2                                  *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+Console.WriteLine("* n = 5, k изменяется от 1 до 10                                          *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+Console.WriteLine("***************************************************************************");
+int n = 5;
+int k = 1;
+int x = 10;
+DataService ds =  new DataService();
+double result = ds.GetSumSeries(n, k, x);
+Console.WriteLine(result);
+Console.ReadKey();
